@@ -1,0 +1,9 @@
+.container{
+    display: flex;
+}
+
+.main{
+    display: grid;
+    align-items: center;
+    width: 100%;
+}

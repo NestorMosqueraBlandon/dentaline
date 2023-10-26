@@ -1,0 +1,160 @@
+.container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 30rem;
+    gap: 4rem;
+    /* max-height: 90vh; */
+    max-width: 90vw;
+    height: 90vh;
+    background-color: #ecf9ff;
+    padding: 8rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    position: absolute;
+    left: 8rem;
+    z-index: -1;
+    width: 100%;
+}
+
+.info{
+    background-color: #fff;
+    /* padding: 2rem; */
+    border-radius: 1rem;
+    overflow: hidden;
+    gap: 2rem;
+}
+
+.info_name{
+    font-weight: 500;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.picture{
+    height: 10rem;
+    width: 10rem;
+    overflow: hidden;
+    border-radius: 50rem;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    background-image: linear-gradient(45deg, #00d8ff 0%, #019ae6 100%);
+    padding: 2rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    min-height:  30%;
+    position: relative;
+    z-index: 3;
+}
+.form{
+    width: 43rem;
+    /* height: 40rem; */
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    padding-block: 4rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .05);
+}
+
+.title{
+    font-size: 2rem;
+}
+
+.copy{
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, .8);
+}
+
+.form button{
+    margin-top: 2rem;
+}
+
+.greeting{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.options{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 4.5rem;
+    background-color: #3cd7fa;
+    margin-top: -2rem;
+    z-index: 0;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding-top: auto;
+    height: 12rem;
+}
+
+
+.options h3{
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.last_info{
+    text-align: center;
+    padding: 4rem;
+}
+
+.last_info .box{
+    background-color: #003050;
+    border-radius: 2rem;
+    padding: 1rem;
+    color: #fff;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.last_info .box h3{
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+}
+
+.last_info .box p{
+    font-size: 1.4rem;
+}
+
+.grid{
+    display: flex;
+    gap: 2rem;
+    margin-top:4rem ;
+
+}
+
+.grid > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid  p{
+    text-align: center;
+    max-width: 14rem;
+    font-size: 1.4rem;
+}
+
+.chart{
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .05);
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.main{
+    display: grid;
+    gap: 2rem;
+}

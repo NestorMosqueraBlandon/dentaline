@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 9;
+}
+.container ul{
+    background-image: linear-gradient(90deg, #00d8fe 0%, #009ce7 100%);
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    display: grid;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.container ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: 1rem .5rem;
+}
+
+.container ul li a svg{
+    color: #fff;
+}
+
+.container ul li a p {
+    color: #fff;
+    text-align: center;
+}
+
+.active{
+    background-color: #fff;
+}
+
+
+.container ul .active a svg{
+    color: #000;
+}
+
+.container ul .active a p{
+    color: #000;
+}

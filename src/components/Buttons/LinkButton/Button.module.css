@@ -1,0 +1,23 @@
+.btn{
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.primary{
+    background-color: #215273;
+    color: #fff;
+    text-align: center;
+}
+
+.alternative{
+    border:1px solid #215273;
+    background-color: transparent;
+    color: rgba(0, 0, 0, .8);
+}
+
+.alternative span{
+    color: #215273;
+}
