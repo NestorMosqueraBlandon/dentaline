@@ -1,0 +1,10 @@
+export { default as Agenda } from './Agenda';
+export { default as Dashboard } from './Dashboard';
+export { default as Info } from './Historial/Forms/Info';
+export { default as InfoDataAnt } from './Historial/FormsAnt/InfoDataAnt';
+export { default as InfoData } from './Historial/FormsData/InfoData';
+export { default as Historial } from './Historial';
+export { default as NotFound } from './NotFound';
+export { default as Register } from './Register';
+export { default as Signin } from './Signin';
+export { default as Signup } from './Signup';

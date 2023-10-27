@@ -9,14 +9,26 @@ import InfoData from "./screens/Historial/FormsData/InfoData";
 import InfoDataAnt from "./screens/Historial/FormsAnt/InfoDataAnt";
 import Signup from "./screens/Signup";
 import { Routes, Route } from 'react-router-dom'
-const Application = () => {
+import { PrivateRoutes, PublicRoutes } from "./constant-definitions";
+import { GuardRoute } from "./guards";
+import { NotFound } from "./screens";
+import Private from "./screens/Private";
 
+
+
+const Application = () => {
   return (
     <Routes>
-      <Route path="/" element={<Signin />} />
-      <Route path="signin" element={<Signin />} />
-      <Route path="signup" element={<Signup />} />
-      <Route element={<Layout />} >
+          <Route path={PublicRoutes.SIGNIN} element={<Signin />} />
+          <Route element={<GuardRoute privateValidation={true} />}>
+            <Route path={PrivateRoutes.PRIVATE} element={<Private />} />
+          </Route>
+          <Route path="*" element={<NotFound />} />
+      
+      {/* <Route path={PublicRoutes.SIGNIN} element={<Signin />} /> */}
+      
+      {/* <Route path={PublicRoutes.SIGNUP} element={<Signup />} /> */}
+      {/* <Route element={<Layout />} >
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="agenda" element={<Agenda />} />
         <Route path="register" element={<Register />} />
@@ -26,7 +38,7 @@ const Application = () => {
         <Route path="info-data" element={<InfoData />} />
         <Route path="info-data-ant" element={<InfoDataAnt />} />
         
-      </Route>
+      </Route> */}
 
     </Routes>
   )
